@@ -76,4 +76,4 @@ def calculator():
             print("Choix invalide. Veuillez réessayer.")
 
 if __name__ == "__main__":
-    calc()
+    calculator()
