@@ -1,3 +1,34 @@
+import math
+
+# Définition des fonctions
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y == 0:
+        return "Erreur : Division par zéro."
+    return x / y
+
+def power(x, y):
+    return x ** y
+
+def square_root(x):
+    if x < 0:
+        return "Erreur : Racine carrée d'un nombre négatif."
+    return math.sqrt(x)
+
+def logarithm(x, base):
+    if x <= 0:
+        return "Erreur : Logarithme d'un nombre non positif."
+    return math.log(x, base)
+
+# Fonction principale
 def calculator():
     print("Sélectionnez une opération :")
     print("1. Addition")
@@ -8,7 +39,7 @@ def calculator():
     print("6. Racine carrée")
     print("7. Logarithme")
 
-    # Remplacez les inputs par des valeurs fixes pour le test
+    # Remplacer les inputs par des valeurs fixes pour le test
     test_choices = ['1', '2', '3', '4', '5', '6', '7', 'q']
     for choice in test_choices:
         print(f"Test avec le choix : {choice}")
@@ -45,5 +76,4 @@ def calculator():
             print("Choix invalide. Veuillez réessayer.")
 
 if __name__ == "__main__":
-    calculator()
-
+    calc()
